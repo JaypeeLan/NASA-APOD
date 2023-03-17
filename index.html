@@ -27,14 +27,16 @@
 
         <!-- Results Nav -->
         <span class="navigation-items" id="resultsNav">
-          <h3 class="clickable">Favourites</h3>
+          <h3 class="clickable" onclick="updateDOM('favorites')">Favourites</h3>
           <h3>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;</h3>
-          <h3 class="clickable">Load More</h3>
+          <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
         </span>
 
         <!-- Fvaourites Nav -->
-        <span class="navigation-items hidden" id="favouritesNav">
-          <h3 class="clickable">Load More Nasa Images</h3>
+        <span class="navigation-items hidden" id="favoritesNav">
+          <h3 class="clickable" onclick="getNasaPictures()">
+            Load More Nasa Images
+          </h3>
         </span>
       </div>
       <!-- Images Container -->
@@ -46,6 +48,6 @@
       <h1>ADDED!</h1>
     </div>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
